@@ -1,0 +1,20 @@
+Makefile:60: Makefile.dep: No such file or directory
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast -MM sockets.cpp protocol.cpp  cix.cpp cixd.cpp >Makefile.dep
+checksource cix.cpp
+cpplint.py.perl cix.cpp
+Done processing cix.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast -c cix.cpp
+checksource sockets.cpp
+cpplint.py.perl sockets.cpp
+Done processing sockets.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast -c sockets.cpp
+checksource protocol.cpp
+cpplint.py.perl protocol.cpp
+Done processing protocol.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast -c protocol.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast -o cix cix.o sockets.o protocol.o
+checksource cixd.cpp
+cpplint.py.perl cixd.cpp
+Done processing cixd.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast -c cixd.cpp
+g++ -std=gnu++17 -g -O0 -Wall -Wextra -Wold-style-cast -o cixd cixd.o sockets.o protocol.o

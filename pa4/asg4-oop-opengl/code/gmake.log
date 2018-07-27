@@ -1,0 +1,1 @@
+checksource graphics.h graphics.cpp interp.h interp.cpp rgbcolor.h rgbcolor.cpp shape.h shape.cpp debug.h debug.cpp util.h util.tcc util.cpp main.cpp Makefile Makefile.dep mk-colors.perl

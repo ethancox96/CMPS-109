@@ -1,0 +1,6 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: starting inherit.cpp
+inherit.cpp:
+     $Id: inherit.cpp,v 1.6 2016-04-08 19:51:13-07 - - $
+g++ -g -O0 -Wall -Wextra -fdiagnostics-color=never -std=gnu++17 inherit.cpp -o inherit -lm
+rm -f inherit.o
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: finished inherit.cpp
